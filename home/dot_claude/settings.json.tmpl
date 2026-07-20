@@ -203,7 +203,8 @@
     "additionalDirectories": [
       "{{ .chezmoi.homeDir }}/workspace/tmp",
       "{{ .chezmoi.homeDir }}/workspace/worktrees"
-    ]
+    ],
+    "defaultMode": "auto"
   },
   "statusLine": {
     "type": "command",
@@ -211,5 +212,8 @@
   },
   "forceLoginMethod": "claudeai",
   "forceLoginOrgUUID": "{{ onepasswordRead "op://Private/dotfiles/claude code org_uuid" }}",
-  "language": "japanese"
+  "language": "japanese",
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true
+  }
 }
