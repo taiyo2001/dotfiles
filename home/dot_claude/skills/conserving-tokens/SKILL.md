@@ -19,6 +19,5 @@ description: Use when about to run grep/find/Read two or more times or read acro
 
 ## 判定の例外
 
-- ユーザーが「節約モードで」等を明示 → より積極的に適用する(Subagent委譲を増やす)
 - ユーザーが「全部読んで」等を明示 → その指示を優先する
 - 対象ファイルが1つに確定していてRead/Editが1〜2回で完結する場合 → Subagentに投げず直接実行してよい
