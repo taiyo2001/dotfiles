@@ -19,6 +19,18 @@ resource "github_branch_protection" "main" {
   allows_deletions    = false
   lock_branch         = true
   enforce_admins      = false
+
+  required_status_checks {
+    strict = true
+    contexts = [
+      "Shell Script Formatting",
+      "ShellCheck",
+      "Bats Smoke Tests",
+      "Terraform Format",
+      "Terraform Validate",
+      "Secret Scanning",
+    ]
+  }
 }
 
 resource "github_branch_protection" "gh_pages" {
