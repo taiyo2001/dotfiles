@@ -10,7 +10,7 @@
 
 コーディングスタイルは [Terraform Style Guide](https://developer.hashicorp.com/terraform/language/style) に準拠する。
 
-## Workflow
+## ワークフロー
 
 [GitHub Flow](https://docs.github.com/ja/get-started/using-github/github-flow) に従う。
 
@@ -20,4 +20,4 @@
 
 ## コミット前チェックリスト
 
-プッシュ前に [`.agents/guidance/precommit.md`](.agents/guidance/precommit.md) を確認する。
+プッシュ前に [`.agents/rules/precommit.md`](.agents/rules/precommit.md) を確認する。
