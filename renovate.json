@@ -1,6 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices"],
-  "schedule": ["* * 1-3 * *"],
+  "extends": ["config:best-practices", "schedule:weekly"],
   "enabledManagers": ["github-actions"]
 }
