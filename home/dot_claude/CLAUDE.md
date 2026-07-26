@@ -28,7 +28,3 @@
 ## 重要な決定事項の記録
 
 設計判断・仕様変更・トレードオフなど後から参照価値のある決定事項は、作業の区切りごとにMarkdownへ記録する。記録先はプロジェクトの慣習に従い、無ければユーザーに確認するか`tmp/docs`配下を提案する。「何を」ではなく「なぜその決定に至ったか」を書き、自明な実装詳細や些細な作業は記録しない。
-
-## バージョンアップ方針
-
-依存関係のバージョンアップは https://docs.renovatebot.com/upgrade-best-practices/#general-recommendations の一般的な推奨事項に従う(`config:recommended`ではなく`config:best-practices`の使用、頻繁かつ小さい単位での更新、Dependency Dashboardの活用、changelog確認、メジャーバージョン更新への適切な対応)。月次・週次等でまとめてバッチ更新する運用は推奨に反するため避ける。
