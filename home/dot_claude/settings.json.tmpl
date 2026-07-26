@@ -210,10 +210,32 @@
     "type": "command",
     "command": "bash {{ .chezmoi.homeDir }}/.claude/statusline.sh"
   },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash {{ .chezmoi.homeDir }}/.claude/hooks/git-guard.sh",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  },
   "forceLoginMethod": "claudeai",
   "forceLoginOrgUUID": "{{ onepasswordRead "op://Private/dotfiles/claude code org_uuid" }}",
   "language": "japanese",
   "enabledPlugins": {
     "superpowers@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "aws-agent-toolkit": {
+      "source": {
+        "source": "github",
+        "repo": "aws/agent-toolkit-for-aws"
+      }
+    }
   }
 }
