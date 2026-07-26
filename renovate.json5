@@ -1,0 +1,15 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: ['config:best-practices'],
+  enabledManagers: ['github-actions'],
+  platformAutomerge: false,
+  automergeStrategy: 'squash',
+  packageRules: [
+    {
+      matchManagers: ['github-actions'],
+      matchUpdateTypes: ['minor', 'patch', 'pin', 'digest'],
+      groupName: 'github-actions',
+      automerge: true,
+    },
+  ],
+}
