@@ -11,7 +11,7 @@
 
 ## トークン消費の節約
 
-判断基準は Skill `conserving-tokens` を参照(`/clear`提案、モデル使い分け提案、調査のSubagent委譲、大きいファイルの部分読み、Workflow/大量Agent fan-outの抑制)。
+判断基準は Skill `conserving-tokens` を参照(調査のSubagent委譲、大きいファイルの部分読み、Workflow/大量Agent fan-outの抑制)。
 
 ## ライブラリ利用時の指示
 
