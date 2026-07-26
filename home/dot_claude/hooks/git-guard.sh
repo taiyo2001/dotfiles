@@ -19,7 +19,7 @@ fi
 
 $is_destructive || $is_broad_add || exit 0
 
-repo_root=$(git rev-parse --show-toplevel 2>/dev/null || pwd)
+repo_root=$(git rev-parse --show-toplevel 2> /dev/null || pwd)
 
 if $is_destructive; then
   status=$(cd "$repo_root" && git status 2>&1 || true)
