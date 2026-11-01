@@ -153,7 +153,7 @@ jobs:
 
       - uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: "1.15.6"
+          terraform_version: "v1.17.1"
 
       - name: Terraform Format Check
         run: terraform -chdir=terraform fmt -check -recursive
@@ -168,7 +168,7 @@ jobs:
 
       - uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: "1.15.6"
+          terraform_version: "v1.17.1"
 
       - name: Terraform Init
         run: terraform -chdir=terraform init -backend=false
